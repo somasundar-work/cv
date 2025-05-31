@@ -1,16 +1,80 @@
-<main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16" id="main-content">
-  <!-- <h1>Document Title</h1>
-  <p>This is a sample paragraph.</p>
-  <p>More content here...</p>
-  <div class="page-break"></div>
-  <p>More content on the next page...</p> -->
+<!-- <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16" id="main-content">
   <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
+
   <app-summary></app-summary>
   <app-about></app-about>
   <app-work></app-work>
   <app-education></app-education>
   <app-skills></app-skills>
   <app-projects></app-projects>
+</main> -->
+<main class="container max-w-4xl mx-auto px-6 py-10 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
+    <img src="assets/avatar.jpg" class="w-24 h-24 rounded-full" alt="Avatar" />
+    <div>
+      <h1 class="text-3xl font-bold">Bartosz Jarocki</h1>
+      <p class="text-gray-600">Full Stack Engineer focused on building products<br/> with extra attention to details</p>
+      <p class="text-sm text-gray-500">Wroclaw, Poland, CET</p>
+      <div class="mt-2 flex gap-2">
+        <img src="assets/github.svg" alt="GitHub" class="w-5 h-5" />
+        <img src="assets/linkedin.svg" alt="LinkedIn" class="w-5 h-5" />
+        <!-- Add other icons -->
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2 class="text-xl font-semibold mb-2">About</h2>
+    <p class="text-sm leading-6">
+      As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1...As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1...As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1...As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1...
+    </p>
+  </section>
+
+  <!-- Work Experience -->
+  <section class="mt-8">
+    <h2 class="text-xl font-semibold mb-2">Work Experience</h2>
+    <div class="space-y-4">
+      <div>
+        <h3 class="font-bold">Parabol <span class="text-gray-500">Remote</span></h3>
+        <p class="text-sm font-medium">Senior Full Stack Developer — 2021–2024</p>
+        <p class="text-sm">Implemented new features... React, TypeScript, GraphQL</p>
+      </div>
+      <!-- Add more experiences similarly -->
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="mt-8">
+    <h2 class="text-xl font-semibold mb-2">Education</h2>
+    <p class="text-sm font-bold">Wroclaw University of Technology</p>
+    <p class="text-sm">Bachelor's Degree in Control systems engineering and Robotics</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="mt-8">
+    <h2 class="text-xl font-semibold mb-2">Skills</h2>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">JavaScript</span>
+      <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">TypeScript</span>
+      <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">React</span>
+      <!-- Add more -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="mt-8">
+    <h2 class="text-xl font-semibold mb-4">Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="border p-4 rounded-lg">
+        <h3 class="font-bold text-sm">Consultly</h3>
+        <p class="text-sm">A platform to build and grow your online business</p>
+        <p class="text-xs text-gray-500 mt-2">Side Project • TypeScript • Next.js • GraphQL</p>
+      </div>
+      <!-- Repeat for each project -->
+    </div>
+  </section>
 </main>
