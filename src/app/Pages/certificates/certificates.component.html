@@ -1,5 +1,5 @@
 <!-- Certifications -->
-<section class="mt-8">
+<section class="mt-8" *ngIf="certificates && certificates.length > 0">
   <h2 class="text-xl font-semibold mb-2">Certifications</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 print:grid-cols-1 gap-2">
     <div *ngFor="let cert of certificates" class="bg-white p-2 rounded shadow">
@@ -7,9 +7,9 @@
         <img *ngIf="cert.logo" [src]="cert.logo" alt="{{ cert.issuer }} logo"
           class="w-20 h-20 rounded mr-4 object-contain bg-gray-100" />
         <div>
-          <h3 class="text-lg font-semibold">{{ cert.name }}</h3>
-          <p class="text-sm text-gray-600">{{ cert.issuer }}</p>
-          <div class="flex text-xs text-gray-500 space-x-4 mt-1">
+          <h6 class="text-sm font-semibold">{{ cert.name }}</h6>
+          <p class="text-xs font-semibold text-gray-600">{{ cert.issuer }}</p>
+          <div class="flex text-xs text-gray-500 space-x-2 mt-1">
             <span><strong>Issued:</strong> {{ cert.issued }}</span>
             <span *ngIf="cert.expires"><strong>Expires:</strong> {{ cert.expires }}</span>
           </div>
@@ -22,7 +22,7 @@
                 d="M10.172 13.828a4 4 0 010-5.656l3.535-3.535a4 4 0 015.657 5.657l-1.414 1.414" />
             </svg>
             View Certificate
-            <!-- <span class="print:hidden">View Certificate</span>
+            <!-- <span class="print:hidden sm:visible not-sm:hidden print:visible">View Certificate</span>
             <span class="not-print:hidden">{{ cert.link }}</span> -->
           </a>
         </div>

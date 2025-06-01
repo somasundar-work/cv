@@ -7,13 +7,11 @@
 
   <app-work></app-work>
 
-  <app-education *ngIf="Info.education !== undefined && Info.education.length > 0"
-    [education]="Info.education"></app-education>
+  <app-education [education]="Info.education"></app-education>
 
-  <app-certificates *ngIf="Info.certifications !== undefined && Info.certifications.length > 0"
-    [certificates]="Info.certifications"></app-certificates>
+  <app-certificates [certificates]="Info.certifications"></app-certificates>
 
-  <app-skills></app-skills>
+  <app-skills [skills]="Info.skills"></app-skills>
 
   <app-projects></app-projects>
 

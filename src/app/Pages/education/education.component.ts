@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './education.component.css',
 })
 export class EducationComponent {
-  @Input() education: any[] = [];
+  @Input() education?: any[] = [];
 }

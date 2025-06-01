@@ -1,10 +1,7 @@
 <!-- Skills -->
-<section class="mt-8">
+<section class="mt-8" *ngIf="skills && skills.length > 0">
   <h2 class="text-xl font-semibold mb-2">Skills</h2>
   <div class="flex flex-wrap gap-2">
-    <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">JavaScript</span>
-    <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">TypeScript</span>
-    <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">React</span>
-    <!-- Add more -->
+    <span *ngFor="let skill of skills" class="px-3 py-1 bg-gray-200 rounded-full text-sm">{{skill}}</span>
   </div>
 </section>

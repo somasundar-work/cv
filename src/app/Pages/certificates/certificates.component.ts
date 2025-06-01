@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './certificates.component.css'
 })
 export class CertificatesComponent {
-  @Input() certificates: any[] = [];
+  @Input() certificates?: any[] = [];
 }
