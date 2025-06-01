@@ -1,11 +1,19 @@
 <!-- Projects -->
-<section class="mt-8">
+<section class="mt-8" *ngIf="projects && projects.length > 0">
   <h2 class="text-xl font-semibold mb-4">Projects</h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <div class="border p-4 rounded-lg">
-      <h3 class="font-bold text-sm">Consultly</h3>
-      <p class="text-sm">A platform to build and grow your online business</p>
-      <p class="text-xs text-gray-500 mt-2">Side Project • TypeScript • Next.js • GraphQL</p>
+    <div *ngFor="let proj of projects" class="border p-4 rounded-lg flex items-start gap-4">
+      <img *ngIf="proj.logo" [src]="proj.logo" alt="{{proj.title}} logo" class="w-10 h-10 object-contain rounded" />
+      <div>
+      <h3 class="font-bold text-sm">
+        <a *ngIf="proj.link" [href]="proj.link" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+        {{proj.title}}
+        </a>
+        <span *ngIf="!proj.link">{{proj.title}}</span>
+      </h3>
+      <p class="text-sm">{{proj.description}}</p>
+      <p class="text-xs font-bold text-gray-900 mt-2">{{ proj.techStack.join(' * ') }}</p>
+      </div>
     </div>
     <!-- Repeat for each project -->
   </div>
