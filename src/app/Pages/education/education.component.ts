@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-education',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './education.component.html',
-  styleUrl: './education.component.css'
+  styleUrl: './education.component.css',
 })
 export class EducationComponent {
-
+  @Input() education: any[] = [];
 }

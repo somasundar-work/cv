@@ -4,7 +4,9 @@ import { EducationComponent } from './Pages/education/education.component';
 import { WorkComponent } from './Pages/work/work.component';
 import { ProjectsComponent } from './Pages/projects/projects.component';
 import { SkillsComponent } from './Pages/skills/skills.component';
-import { AboutComponent } from './Pages/about/about.component';
+import { CertificatesComponent } from "./Pages/certificates/certificates.component";
+import { RESUME_DATA } from './Config/resume-data';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,11 +16,13 @@ import { AboutComponent } from './Pages/about/about.component';
     WorkComponent,
     ProjectsComponent,
     SkillsComponent,
-    AboutComponent,
-  ],
+    CertificatesComponent,
+    CommonModule
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'cv';
+  Info = RESUME_DATA
 }

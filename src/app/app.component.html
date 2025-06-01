@@ -1,12 +1,17 @@
-<main class="container max-w-4xl mx-auto px-6 py-10 text-gray-800 font-sans">
+<main class="container max-w-4xl print:max-2xl mx-auto px-6 py-10 text-gray-800 font-sans">
 
-  <app-summary></app-summary>
-
-  <app-about></app-about>
+  <app-summary [name]="Info.name" [initials]="Info.initials" [avatarUrl]="Info.avatarUrl" [summary]="Info.summary"
+    [about]="Info.about" [location]="Info.location" [locationLink]="Info.locationLink"
+    [personalWebsiteUrl]="Info.personalWebsiteUrl" [email]="Info.email" [tel]="Info.tel" [githubUrl]="Info.github"
+    [linkedinUrl]="Info.linkedIn"></app-summary>
 
   <app-work></app-work>
 
-  <app-education></app-education>
+  <app-education *ngIf="Info.education !== undefined && Info.education.length > 0"
+    [education]="Info.education"></app-education>
+
+  <app-certificates *ngIf="Info.certifications !== undefined && Info.certifications.length > 0"
+    [certificates]="Info.certifications"></app-certificates>
 
   <app-skills></app-skills>
 
