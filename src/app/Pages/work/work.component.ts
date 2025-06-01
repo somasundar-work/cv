@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-work',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './work.component.html',
   styleUrl: './work.component.css'
 })
 export class WorkComponent {
-
+  @Input() workExperience?: any[] = [];
 }
