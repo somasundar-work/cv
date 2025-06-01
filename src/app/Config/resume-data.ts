@@ -191,7 +191,7 @@ export const RESUME_DATA: any = {
         'An open source minimalist, print friendly CV template with a focus on readability and clean design.',
       logo: 'https://raw.githubusercontent.com/somasundar-work/cv/refs/heads/main/public/icon-512.png',
       link: {
-        href: 'https://github.com/somasundar-work/cv',
+        href: 'https://somasundar-work.github.io/cv/',
         github: 'https://github.com/somasundar-work/cv',
       },
     },
