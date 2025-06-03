@@ -215,7 +215,7 @@ export const RESUME_DATA: any = {
       techStack: ['TypeScript', 'Angular', 'Tailwind CSS'],
       description:
         'An open source minimalist, print friendly CV template with a focus on readability and clean design.',
-      logo: 'https://raw.githubusercontent.com/somasundar-work/cv/refs/heads/main/public/icon-512.png',
+      logo: 'https://raw.githubusercontent.com/somasundar-work/cv/refs/heads/main/src/public/icon-512.png',
       link: {
         href: 'https://somasundar-work.github.io/cv/',
         github: 'https://github.com/somasundar-work/cv',
