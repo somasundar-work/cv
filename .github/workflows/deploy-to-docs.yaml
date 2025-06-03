@@ -38,7 +38,9 @@ jobs:
           echo "Creating Docs directory and moving files:"
           mkdir -p docs
           echo "Moving files from dist/cv/browser to docs directory"
-          mv /dist/cv/browser/* /docs/
+          mv dist/cv/browser/* docs/
+          echo "Listing contents of docs directory after moving files:"
+          ls docs
 
       - name: Commit and Push Changes
         run: |
