@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to Docs Folder
         run: |
           mkdir -p docs
-          mv dist/cv/* docs/
+          mv dist/cv/broswer/* docs/
 
       - name: Commit and Push Changes
         run: |
