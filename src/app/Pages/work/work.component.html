@@ -19,7 +19,7 @@
         </span>
       </div>
       <p class="text-sm text-gray-700 leading-relaxed print:hidden">{{experience.summary}}</p>
-      <div *ngIf="experience.techStack" class="print:hidden">
+      <div *ngIf="experience.techStack">
         <span *ngFor="let tech of experience.techStack"
           class="inline-block bg-blue-100 text-blue-800 text-xs mr-1 mb-1 px-2 py-0.5 rounded">
           {{tech}}
