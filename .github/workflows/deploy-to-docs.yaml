@@ -37,7 +37,9 @@ jobs:
 
       - name: Deploy to Docs Folder
         run: |
+          ls
           mkdir -p docs
+          ls
           mv /dist/cv/browser/* /docs/
 
       - name: Commit and Push Changes
