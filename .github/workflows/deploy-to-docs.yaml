@@ -25,13 +25,15 @@ jobs:
         run: npm ci
 
       - name: Build Angular project
-        run: npm run build -- --base-href=/cv/
-
-      - name: Deploy to Docs Folder
         run: |
+          npm run build -- --base-href=/cv/
+          echo "Build completed. Listing contents of directory:"
           ls
+          echo "Build completed. Listing contents of dist directory:"
           ls dist
+          echo "Creating Docs directory and moving files:"
           mkdir -p docs
+          echo "Moving files from dist/cv/browser to docs directory"
           mv /dist/cv/browser/* /docs/
 
       - name: Commit and Push Changes
