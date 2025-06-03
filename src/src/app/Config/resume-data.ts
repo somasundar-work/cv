@@ -8,7 +8,7 @@ export const RESUME_DATA: any = {
     'Results-driven .NET professional with a proven track record of leading teams to deliver practical, scalable solutions aligned with business goals. Passionate about solving complex problems in dynamic environments and committed to continuous learning and professional growth. Proactively stays current with evolving technologies and thrives on collaboration, innovation, and driving impactful outcomes through technical leadership.',
   avatarUrl:
     'https://media.licdn.com/dms/image/v2/C5603AQE_b7BQMedQLQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1602084976280?e=1754524800&v=beta&t=b7uybkXfseA002w-B7vTcB8UlIrUfTtYtljtt1r9xXs',
-  personalWebsiteUrl: 'https://somasundar.me',
+  personalWebsiteUrl: 'https://somasundar-work.github.io',
 
   email: 'somasundar.work@outlook.com',
   tel: '+91 8344452066',
@@ -37,7 +37,7 @@ export const RESUME_DATA: any = {
       ],
       location: 'Hybrid - Chennai, Tamil Nadu, India',
       summary:
-        'Leading a team of developers to design and implement scalable web applications using .NET Core, Angular, and AWS services. Focused on delivering high-quality software solutions that meet client requirements.',
+        'design and implement scalable web applications using .NET Core, Angular, and AWS services. Focused on delivering high-quality software solutions that meet client requirements.',
       techStack: [
         '.NET',
         'C#',
@@ -60,6 +60,16 @@ export const RESUME_DATA: any = {
         'Entity Framework',
       ],
       logo: '',
+      responsibilities: [
+        'Contributed to the development of RESTful APIs to facilitate seamless communication between front-end and back-end systems.',
+        'Collaborated with cross-functional teams to ensure alignment of technical solutions with business objectives.',
+        'Understand the requirements of the client and develop functional applications.',
+        'Prepare Unit test plan and support it with Unit test cases',
+        'Engaged in code reviews and provided constructive feedback to maintain high code quality standards.',
+        'Worked with AWS services like Lambda, S3, CloudWatch, Glue Jobs, and DynamoDB to build scalable solutions.',
+        'Responsible for mentoring and guiding the team members in the project.',
+        'Actively participated in Agile ceremonies, including sprint planning, daily stand-ups, and retrospectives, to ensure effective project management and delivery.',
+      ]
     },
     {
       company: 'Novac Technology Solutions',
