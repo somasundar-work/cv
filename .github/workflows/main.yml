@@ -34,9 +34,10 @@ jobs:
           echo "Build completed. Listing contents of dist/cv/browser directory:"
           ls dist/cv/browser
           echo "Creating Docs directory and moving files:"
+          cd ..
           mkdir -p docs
           echo "Moving files from dist/cv/browser to docs directory"
-          mv dist/cv/browser/* ./../docs/
+          mv src/dist/cv/browser/* docs/
           echo "Listing contents of docs directory after moving files:"
           ls docs
           
