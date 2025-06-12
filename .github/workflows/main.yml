@@ -25,20 +25,11 @@ jobs:
       - name: Build Angular project
         run: |
           npm run build -- --base-href=/cv/
-          echo "Build completed. Listing contents of directory:"
-          ls
-          echo "Build completed. Listing contents of dist directory:"
-          ls dist
-          echo "Build completed. Listing contents of dist/cv directory:"
-          ls dist/cv
-          echo "Build completed. Listing contents of dist/cv/browser directory:"
-          ls dist/cv/browser
-          echo "Creating Docs directory and moving files:"
           cd ..
+          rm -rf docs
           mkdir -p docs
-          echo "Moving files from dist/cv/browser to docs directory"
           mv src/dist/cv/browser/* docs/
-          echo "Listing contents of docs directory after moving files:"
+          echo "Files inside docs folder"
           ls docs
           
       - name: Commit and Push Changes
